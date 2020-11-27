@@ -3,7 +3,7 @@ package db
 import (
 	"context"
 
-	"github.com/allenjoseph/go-cqrs/model"
+	"go-cqrs/model"
 )
 
 // Repository interface

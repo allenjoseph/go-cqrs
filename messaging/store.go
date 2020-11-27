@@ -1,7 +1,7 @@
 package messaging
 
 import (
-	"github.com/allenjoseph/go-cqrs/model"
+	"go-cqrs/model"
 )
 
 // Message interface

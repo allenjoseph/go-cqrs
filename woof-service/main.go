@@ -4,9 +4,9 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/allenjoseph/go-cqrs/db"
-	"github.com/allenjoseph/go-cqrs/messaging"
-	"github.com/allenjoseph/go-cqrs/util"
+	"go-cqrs/db"
+	"go-cqrs/messaging"
+	"go-cqrs/util"
 	"github.com/gorilla/mux"
 )
 

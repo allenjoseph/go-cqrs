@@ -6,10 +6,10 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/allenjoseph/go-cqrs/db"
-	"github.com/allenjoseph/go-cqrs/messaging"
-	"github.com/allenjoseph/go-cqrs/model"
-	"github.com/allenjoseph/go-cqrs/util"
+	"go-cqrs/db"
+	"go-cqrs/messaging"
+	"go-cqrs/model"
+	"go-cqrs/util"
 	uuid "github.com/satori/go.uuid"
 )
 

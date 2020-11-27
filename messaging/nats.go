@@ -4,8 +4,8 @@ import (
 	"bytes"
 	"encoding/gob"
 
-	"github.com/allenjoseph/go-cqrs/model"
-	"github.com/allenjoseph/go-cqrs/util"
+	"go-cqrs/model"
+	"go-cqrs/util"
 	"github.com/nats-io/go-nats"
 )
 

@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/allenjoseph/go-cqrs/messaging"
-	"github.com/allenjoseph/go-cqrs/util"
+	"go-cqrs/messaging"
+	"go-cqrs/util"
 )
 
 func main() {

@@ -4,8 +4,8 @@ import (
 	"net/http"
 	"strconv"
 
-	"github.com/allenjoseph/go-cqrs/db"
-	"github.com/allenjoseph/go-cqrs/util"
+	"go-cqrs/db"
+	"go-cqrs/util"
 )
 
 func listWoofsHandler(w http.ResponseWriter, r *http.Request) {

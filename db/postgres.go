@@ -4,8 +4,8 @@ import (
 	"context"
 	"database/sql"
 
-	"github.com/allenjoseph/go-cqrs/model"
-	"github.com/allenjoseph/go-cqrs/util"
+	"go-cqrs/model"
+	"go-cqrs/util"
 	_ "github.com/lib/pq" // needed for improve Scan func
 )
 
