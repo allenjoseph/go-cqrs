@@ -1,0 +1,36 @@
+version: "3.7"
+services:
+  postgres:
+    image: postgres:11-alpine
+    restart: always
+    environment:
+      POSTGRES_DB: woofer
+      POSTGRES_USER: woofer
+      POSTGRES_PASSWORD: woofwoof
+    volumes:
+      - "./db/up.sql:/docker-entrypoint-initdb.d/up.sql"
+  nats:
+    image: nats-streaming:linux
+    restart: always
+  woofs:
+    build: "."
+    command: "woof-service"
+    ports:
+      - "8080:8080"
+    depends_on:
+      - "postgres"
+      - "nats"
+  query:
+    build: "."
+    command: "query-service"
+    ports:
+      - "9090:9090"
+    depends_on:
+      - "postgres"
+      - "nats"
+  client:
+    build: "."
+    command: "client"
+    depends_on:
+      - "postgres"
+      - "nats"
